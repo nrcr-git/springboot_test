@@ -1,0 +1,142 @@
+http://localhost:8080/unicorns/
+
+Request : Add Record:
+{
+       "unicorns":{
+        "name": "Chandra",
+        "hairColor": "Black",
+        "hornLength": 75,
+        "eyeColor": "Brown",
+        "height": 140,
+        "heightUnit": "cm",
+        "weight": 60,
+        "weightUnit": "kg",
+        "identifibleMarks" : [
+        	{
+        		"id": 14,
+        		"side": "right",
+        		"location": "front",
+        		"mark" : "abc",
+        		"color" : "brown"
+        		
+        	
+        }
+        	]
+    }
+}
+
+O/P
+Recored inserted succesfully.
+
+=======================================================
+
+Get All: http://localhost:8080/unicorns/
+
+O/P
+[
+    {
+        "unicornId": 1,
+        "name": "Rama",
+        "hairColor": "Black",
+        "hornLength": 75,
+        "eyeColor": "Brown",
+        "height": 141,
+        "heightUnit": "cm",
+        "weight": 60,
+        "weightUnit": "kg",
+        "identifibleMarks": [
+            {
+                "id": 14,
+                "side": "right",
+                "location": "front",
+                "mark": "abc",
+                "color": "brown"
+            }
+        ]
+    }
+]
+
+======================================================
+Get Single recored: http://localhost:8080/unicorns/1
+
+O/P:
+{
+    "unicornId": 1,
+    "name": "Rama",
+    "hairColor": "Black",
+    "hornLength": 75,
+    "eyeColor": "Brown",
+    "height": 140,
+    "heightUnit": "cm",
+    "weight": 60,
+    "weightUnit": "kg",
+    "identifibleMarks": [
+        {
+            "id": 45,
+            "side": "right",
+            "location": "front",
+            "mark": "abc",
+            "color": "brown"
+        }
+    ]
+}
+=========================================================
+
+Put(Update):  http://localhost:8080/unicorns/1 
+
+{
+       "unicorns":{
+       	"unicornId":1,
+        "name": "RamiReddy",
+        "hairColor": "Black",
+        "hornLength": 75,
+        "eyeColor": "Brown",
+        "height": 141,
+        "heightUnit": "cm",
+        "weight": 60,
+        "weightUnit": "kg",
+        "identifibleMarks" : [
+        	{
+        		"id": 15,
+        		"side": "right",
+        		"location": "front",
+        		"mark" : "abc",
+        		"color" : "brown"
+        		
+        	
+        }
+        	]
+    }
+}
+
+
+=================================================================
+Delete: http://localhost:8080/unicorns/1
+
+
+{
+       "unicorns":{
+       	"unicornId":1,
+        "name": "Ramc",
+        "hairColor": "Black",
+        "hornLength": 75,
+        "eyeColor": "Brown",
+        "height": 141,
+        "heightUnit": "cm",
+        "weight": 60,
+        "weightUnit": "kg",
+        "identifibleMarks" : [
+        	{
+        		"id": 14,
+        		"side": "right",
+        		"location": "front",
+        		"mark" : "abc",
+        		"color" : "brown"
+        		
+        	
+        }
+        	]
+    }
+}
+
+
